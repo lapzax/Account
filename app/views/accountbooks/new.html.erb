@@ -1,7 +1,7 @@
 <%= form_for @item do |i|%>
-Cost:
+花費:
 <%= i.text_field :cost %>
-Kind:
+種類:
 <%= i.select(:kind,[["home","home"],["personal","personal"],["food","food"],["car","car"],["shopping","shopping"]] )%>
-<%= i.submit %>
+<%= i.submit "送出" %>
 <% end %>

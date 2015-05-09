@@ -23,9 +23,9 @@
 			n = ""	
 		end
 		%>
-		<li role="presentation" class="<%=h%>" ><%= link_to "Home",{action: "index", status: "Home"}%></li>
-		<li role="presentation" class="<%=n%>" ><%= link_to "New", {action: "new", status: "New"}%></li>
-		<li role="presentation" class="<%=b%>" ><%= link_to "DashBoard",{action: "board", status: "Board"}%></li>
+		<li role="presentation" class="<%=h%>" ><%= link_to "首頁",{action: "index", status: "Home"}%></li>
+		<li role="presentation" class="<%=n%>" ><%= link_to "新增", {action: "new", status: "New"}%></li>
+		<li role="presentation" class="<%=b%>" ><%= link_to "圖表",{action: "board", status: "Board"}%></li>
 		<li role="presentation" style="float:right"><%= link_to "登出", destroy_user_session_path, method: "delete"%></li>
 		</ul>
 		<% else %>

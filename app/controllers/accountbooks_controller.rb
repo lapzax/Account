@@ -17,7 +17,7 @@ class AccountbooksController < ApplicationController
 	end
 
 	def board
-		@item = Accountbook.select("kind, sum(cost) as Sum").group("kind")
+		@item = Accountbook.select("kind, sum(cost) as c").group("kind")
 		@item = @item.where("user_id = ?", current_user.id)
 	end
 

@@ -1,10 +1,9 @@
-<h1>index</h1>
 <% if user_signed_in? %>
 <table  class="table table-hover">
 <tr>
-	<th>Cost</th>
-	<th>Kind</th>
-	<th>Time</th>
+	<th>花費</th>
+	<th>種類</th>
+	<th>新增時間</th>
 </tr>	
 <%@item.each do |i|%>
 <tr>
@@ -16,5 +15,5 @@
 </table>
 <%= paginate @item %>
 <% else %>
-<h1>Please Log in First <%= link_to "登入", new_user_session_path %></h1>
+<h1>使用前請先<%= link_to "登入", new_user_session_path %></h1>
 <% end %>
