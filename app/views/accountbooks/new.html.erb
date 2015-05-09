@@ -1,0 +1,7 @@
+<%= form_for @item do |i|%>
+Cost:
+<%= i.text_field :cost %>
+Kind:
+<%= i.select(:kind,[["home","home"],["personal","personal"],["food","food"],["car","car"],["shopping","shopping"]] )%>
+<%= i.submit %>
+<% end %>
